@@ -13,7 +13,7 @@ var current_item_index: = 0
 
 func _ready()-> void:
 	show_text()
-	next_button.press.connect(advance)
+	next_button.pressed.connect(advance)
 
 func show_text()->void:
 	var current_item:= dialogue_items[current_item_index]
