@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=5 format=3 uid="uid://drays61pfu7xc"]
 
-[ext_resource type="StyleBox" uid="uid://bshchr8vtp7u7" path="res://lessons/button_pink.tres" id="1_ei3wx"]
-[ext_resource type="StyleBox" uid="uid://5ystst32lykk" path="res://lessons/button_purple.tres" id="2_ulena"]
+[ext_resource type="StyleBox" uid="uid://bshchr8vtp7u7" path="res://lessons/button_pink.tres" id="1_kr6ka"]
+[ext_resource type="StyleBox" uid="uid://5ystst32lykk" path="res://lessons/button_purple.tres" id="2_fmofw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ulena"]
 content_margin_left = 22.0
@@ -33,11 +33,11 @@ corner_radius_bottom_left = 32
 
 [resource]
 default_font_size = 56
-Button/styles/disabled = ExtResource("1_ei3wx")
+Button/styles/disabled = ExtResource("1_kr6ka")
 Button/styles/focus = SubResource("StyleBoxFlat_ulena")
-Button/styles/hover = ExtResource("2_ulena")
-Button/styles/normal = ExtResource("1_ei3wx")
-Button/styles/pressed = ExtResource("2_ulena")
+Button/styles/hover = ExtResource("2_fmofw")
+Button/styles/normal = ExtResource("1_kr6ka")
+Button/styles/pressed = ExtResource("2_fmofw")
 HBoxContainer/constants/separation = 20
 RichTextLabel/colors/default_color = Color(0.15396076, 0.30814835, 0.7937463, 1)
 RichTextLabel/styles/normal = SubResource("StyleBoxFlat_ei3wx")

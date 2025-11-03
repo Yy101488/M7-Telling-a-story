@@ -1,7 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761933010
+::res://::1762208298
 dialogue.gd::GDScript::6296932627817541077::1761933010::0::1::::<>Control<><>0<>0<><>::
-dialogue.tscn::PackedScene::4733404674026394390::1761933010::0::1::::<><><>0<>0<><>::uid://cs15e2hgd2lan::::res://assets/sliding_background.gdshader<>uid://drays61pfu7xc::::res://lessons/main_theme.tres<>uid://bnly1gkbxw6b5::::res://assets/bubble_pattern.png<>uid://cvyjtb2pbe8s4::::res://dialogue.gd<>uid://copkt78vgp37i::::res://assets/sophia.png<>uid://d000xjtr4iqtk::::res://assets/emotion_regular.png<>uid://bafjgt7eu3x5a::::res://assets/talking_synth.ogg
 icon_telling_a_story.png::CompressedTexture2D::6303229813746255456::1760899870::1761155864::1::::<><><>0<>0<>e643ef57334e7b0b7d625ea9018c612e<>res://.godot/imported/icon_telling_a_story.png-575f1234b8f51c85751bd402286d7779.ctex::
 ::res://addons/::1760899870
 ::res://addons/gdpractice/::1760899870
@@ -147,7 +146,7 @@ reset_net_injector.gd::GDScript::6524666569539532765::1760899870::0::1::::<>Node
 ::res://addons/gdquest_theme_utils/::1760899870
 README.md::TextFile::-1::1760899870::0::1::::<><><>0<>0<><>::
 theme_utils.gd::GDScript::8570643529736897997::1760899870::0::1::::<>RefCounted<><>0<>1<><>::
-::res://assets/::1761155864
+::res://assets/::1761934908
 bubble_pattern.png::CompressedTexture2D::3323087775415318780::1760899870::1761155864::1::::<><><>0<>0<>6f9a32f6aeab8d7cafd030f430e75ca3<>res://.godot/imported/bubble_pattern.png-d4157bb6e93483cd03c6b210e6d2a77f.ctex::
 emotion_happy.png::CompressedTexture2D::7314598341422771064::1760899870::1761155864::1::::<><><>0<>0<>7b26c540c8a507c22875dafc8e7ea3c3<>res://.godot/imported/emotion_happy.png-9a618c47166021d2b3fdbaf667aee8cb.ctex::
 emotion_regular.png::CompressedTexture2D::8967152086833506112::1760899870::1761155864::1::::<><><>0<>0<>13e7c30b9bc8dd7ef1f16b81b465d85e<>res://.godot/imported/emotion_regular.png-3ee71c9f76bcdb11d6dbc3f0c3180ed7.ctex::
@@ -162,10 +161,13 @@ talking_synth_alternate.ogg::AudioStreamOggVorbis::3285191881384235626::17608998
 test.svg::CompressedTexture2D::996294012766278173::1760899870::1761155864::1::::<><><>0<>0<>ba4341a6c83fa4e0504ef2d150f3a830<>res://.godot/imported/test.svg-689185d65599d06cb921948f33195eb0.ctex::
 ::res://assets/extras/::1761155864
 emotion_angry.png::CompressedTexture2D::4318358562975653356::1760899870::1761155864::1::::<><><>0<>0<>adbc721005eba82a7e28488a90570101<>res://.godot/imported/emotion_angry.png-fd0c3451c84588ea85c8053c4187c2db.ctex::
-::res://lessons/::1761930768
+::res://lessons/::1761935949
 button_pink.tres::StyleBoxFlat::3664405392854629328::1761760123::0::1::::<><><>0<>0<><>::
 button_purple.tres::StyleBoxFlat::2156338187272715398::1761760324::0::1::::<><><>0<>0<><>::
-main_theme.tres::Theme::8353963414120343136::1761930768::0::1::::<><><>0<>0<><>::uid://bshchr8vtp7u7::::res://lessons/button_pink.tres<>uid://5ystst32lykk::::res://lessons/button_purple.tres
+dialogue.tscn::PackedScene::4733404674026394390::1761934908::0::1::::<><><>0<>0<><>::uid://cs15e2hgd2lan::::res://assets/sliding_background.gdshader<>uid://drays61pfu7xc::::res://lessons/main_theme.tres<>uid://bnly1gkbxw6b5::::res://assets/bubble_pattern.png<>uid://cvyjtb2pbe8s4::::res://dialogue.gd<>uid://copkt78vgp37i::::res://assets/sophia.png<>uid://d000xjtr4iqtk::::res://assets/emotion_regular.png<>uid://bafjgt7eu3x5a::::res://assets/talking_synth.ogg
+expressions.gd::GDScript::1818618163750732916::1761935949::0::1::::<>Control<><>0<>0<><>::
+Expressions.tscn::PackedScene::4325589704010787129::1761935949::0::1::::<><><>0<>0<><>::uid://drays61pfu7xc::::res://lessons/main_theme.tres<>uid://057m1a3ct0n5::::res://lessons/expressions.gd<>uid://cs15e2hgd2lan::::res://assets/sliding_background.gdshader<>uid://bnly1gkbxw6b5::::res://assets/bubble_pattern.png<>uid://vb24hfgkeyti::::res://assets/pink.png<>uid://d000xjtr4iqtk::::res://assets/emotion_regular.png
+main_theme.tres::Theme::8353963414120343136::1761934908::0::1::::<><><>0<>0<><>::uid://bshchr8vtp7u7::::res://lessons/button_pink.tres<>uid://5ystst32lykk::::res://lessons/button_purple.tres
 ::res://practices/::1760899870
 ::res://practices/L5.P1.pick_correct_response/::1761155864
 pick_correct_response.gd::GDScript::4093551056369971252::1760899870::0::1::::<>ColorRect<><>0<>0<><>::

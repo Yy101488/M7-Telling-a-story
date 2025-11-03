@@ -1,8 +1,8 @@
+TextureRect
 Button
 HBoxContainer
 VBoxContainer
 AudioStreamPlayer
 AudioStreamPlayer2D
 RichTextLabel
-TextureRect
 ColorRect
