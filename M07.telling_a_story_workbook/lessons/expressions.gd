@@ -18,6 +18,7 @@ var expressions :={
 @onready var button_rugular: Button = %ButtonRugular
 @onready var button_sad: Button = %ButtonSad
 @onready var button_happy: Button = %ButtonHappy
+
 func _ready()-> void:
 	body.texture= bodies["pink"]
 	expression.texture = expressions["happy"]
@@ -27,8 +28,8 @@ func _ready()-> void:
 	button_pink.pressed.connect(func()-> void:
 		body.texture = bodies["pink"])
 	button_rugular.pressed.connect(func()-> void:
-		expressions.texture = expressions ["regular"])
+		expression.texture = expressions ["regular"])
 	button_sad.pressed.connect(func()-> void:
-		expressions.texture = expressions["sad"])
+		expression.texture = expressions["sad"])
 	button_happy.pressed.connect(func()-> void:
-		expressions.texture = expressions["happy"])
+		expression.texture = expressions["happy"])
