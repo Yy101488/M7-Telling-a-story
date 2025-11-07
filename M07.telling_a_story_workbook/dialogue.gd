@@ -18,18 +18,18 @@ var bodies := {
 var dialogue_items :Array[Dictionary]=[
 {
 	"expression":expressions["happy"],
-	"text":"Hello Pink, How are you",
+	"text":"Hello Pink, How are [wave]you",
 	"character":bodies["sophia"]
 },
 { 
 	"expression":expressions["sad"],
-	"text":"I'm so tired, I've been working on my PIQs recently",
+	"text":"I'm so tired, I've been working on my [shake]PIQs[/shake] recently",
 	"character":bodies["pink"]
 	
 },
 {
 	"expression":expressions["regular"],
-	"text":"Ah,you're tired? What can I do to help you",
+	"text":"Ah,you're tired? What can I do to [wave]help [/wave] you",
 	"character":bodies["sophia"]
 },
 { 
@@ -39,7 +39,7 @@ var dialogue_items :Array[Dictionary]=[
 },
 {
 	"expression":expressions["regular"],
-	"text": "Sure,Let's go!",
+	"text": "Sure,Let's [tornado freq=3.0][rainbow val=1.0] go![/rainbow][/tornado]",
 	"character":bodies["sophia"]
 },
 ]
@@ -62,8 +62,12 @@ func show_text()->void:
 	var sound_start_position := randf()* sound_max_offset
 	audio_stream_player.play(sound_start_position)
 	tween.finished.connect(audio_stream_player.stop)
-	
 	slide_in()
+	
+	next_button.disabled = true
+	tween.finished.connect(func()->void:
+		next_button.disabled = false
+		)
 	
 func advance()->void:
 	current_item_index +=1

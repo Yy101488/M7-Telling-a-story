@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8o5qo3on08yk"]
+[gd_scene load_steps=11 format=3 uid="uid://b8o5qo3on08yk"]
 
 [ext_resource type="Shader" uid="uid://cs15e2hgd2lan" path="res://assets/sliding_background.gdshader" id="1_758ep"]
 [ext_resource type="Theme" uid="uid://drays61pfu7xc" path="res://lessons/main_theme.tres" id="1_q2h7b"]
@@ -14,6 +14,12 @@ shader_parameter/pattern_sampler = ExtResource("2_hoxo3")
 shader_parameter/bg_color = Color(0.79607844, 0.9882353, 0.75686276, 1)
 shader_parameter/pattern_color = Color(0.5019608, 0.8509804, 0.53333336, 1)
 shader_parameter/pattern_size = 256.0
+
+[sub_resource type="InputEventAction" id="InputEventAction_nggfo"]
+action = &"advance_text"
+
+[sub_resource type="Shortcut" id="Shortcut_rduj4"]
+events = [SubResource("InputEventAction_nggfo")]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
@@ -75,6 +81,7 @@ offset_left = 635.0
 offset_top = 372.0
 offset_right = -431.0
 offset_bottom = -606.0
+bbcode_enabled = true
 text = "   Hello!!!! Michelle!!"
 fit_content = true
 
@@ -92,6 +99,7 @@ offset_right = -13.0
 offset_bottom = -11.0
 grow_horizontal = 0
 grow_vertical = 0
+shortcut = SubResource("Shortcut_rduj4")
 text = "Next"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
