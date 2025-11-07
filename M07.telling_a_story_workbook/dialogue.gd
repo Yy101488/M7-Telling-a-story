@@ -11,26 +11,36 @@ var expressions :={
 	"regular":preload("res://assets/emotion_regular.png"),
 	"sad":preload("res://assets/emotion_sad.png"),	
 }
+var bodies := {
+	"sophia": preload("res://assets/sophia.png"),
+	"pink": preload("res://assets/pink.png")
+}
 var dialogue_items :Array[Dictionary]=[
 {
 	"expression":expressions["happy"],
-	"text":"Hello Michelle",
+	"text":"Hello Pink, How are you",
+	"character":bodies["sophia"]
 },
 { 
 	"expression":expressions["sad"],
-	"text":"Please talk to me Michelle",
+	"text":"I'm so tired, I've been working on my PIQs recently",
+	"character":bodies["pink"]
+	
 },
 {
 	"expression":expressions["regular"],
-	"text":"Ah,you're tired? What can I do to help you"
+	"text":"Ah,you're tired? What can I do to help you",
+	"character":bodies["sophia"]
 },
 { 
-	"expression": expressions["happy"],
-	"text":"I can sing for you, lalalala~"	
+	"expression": expressions["sad"],
+	"text":"Do you mind going to a walk with me?",
+	"character": bodies["pink"]
 },
 {
 	"expression":expressions["regular"],
-	"text": "okay I gtg!! See You!"
+	"text": "Sure,Let's go!",
+	"character":bodies["sophia"]
 },
 ]
 
@@ -41,14 +51,18 @@ func show_text()->void:
 	var current_item:= dialogue_items[current_item_index]
 	rich_text_label.text = current_item["text"]
 	expression.texture = current_item["expression"]
+	body.texture =current_item["character"]
+	
 	rich_text_label.visible_ratio = 0.0
 	var tween :=create_tween()
-	var text_appearing_duration := 1.2
+	var text_appearing_duration: float = current_item["text"].length()/30.0
 	tween.tween_property(rich_text_label,"visible_ratio", 1.0,text_appearing_duration)
+	
 	var sound_max_offset := audio_stream_player.stream.get_length()-text_appearing_duration
 	var sound_start_position := randf()* sound_max_offset
 	audio_stream_player.play(sound_start_position)
 	tween.finished.connect(audio_stream_player.stop)
+	
 	slide_in()
 	
 func advance()->void:
